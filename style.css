@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bona Nova SC", serif;
+}
+
+body {
+    background-color: rgb(33, 38, 64);
+    color: aliceblue;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(20, 20, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 45px;
+    color: rgb(236, 177, 67);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 28px;
+    color:rgb(53, 175, 175);;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.sk {
+    color: rgb(166, 16, 34);
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 80px; 
+}
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 10%;
+    text-align: right;
+}
+
+.home-left {
+    width: 70%; 
+    text-align: right;
+    padding-top: 150px;
+}
+
+.home-left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.home-left h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(53, 175, 175);
+    margin-top: 10px;
+}
+
+.home-left p {
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.home-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+.home-right img {
+    max-width: 180%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 200px;
+}
+
+.about {
+   color: rgb(236, 177, 67);
+   text-align: center;
+   padding-top: 135px;
+   font-size: 30px;
+   padding-bottom: 30px;
+}
+.highlight {
+    color:  rgb(166, 16, 34); 
+}
+
+.about-me {
+   color: white;
+   text-align: center;
+   font-size: 26px;
+   padding-left: 10px;
+   padding-right: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.about-content > div {
+    flex: 1 1 calc(25% - 20px);
+    background-color:rgb(100, 168, 168); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(2, 10, 17);
+}
+
+.about-content > div h3 {
+    color: rgb(166, 16, 34);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content > div p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.education{
+    color:  rgb(236, 177, 67);
+   text-align: center;
+   font-size: 29px;
+   padding-left: 10px;
+   padding-right: 20px;
+   padding-top: 100px;
+   padding-bottom: 80px;
+}
+.education h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: rgb(166, 16, 34);
+}
+.education table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 23px;
+    background-color: rgb(33, 38, 64);
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education th, .education td {
+    border: 2px solid rgb(236, 177, 67);
+    padding: 33px 15px;
+    text-align: center;
+}
+
+.education th {
+    background-color: rgb(236, 177, 67);
+    color: rgb(33, 38, 64);
+    font-size: 24px;
+}
+
+.education tr:nth-child(even) {
+    background-color: rgb(44, 49, 80);
+}
+
+.education tr:nth-child(odd) {
+    background-color: rgb(33, 38, 64);
+}
+.skills {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 30px;
+}
+.skills h1{
+    padding-bottom: 30px;
+    color:  rgb(236, 177, 67);
+}
+
+.about-skills {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    
+}
+
+.skill-box {
+    width: 30%; 
+    padding: 10px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgb(100, 168, 168);
+
+}
+
+.skill-box h3 {
+    color: rgb(166, 16, 34);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgb(100, 168, 168);
+    margin-bottom: 20px;
+
+}
+
+.skill-box p {
+    font-size: 19px;
+    background-color: rgb(100, 168, 168);
+    color: black;
+    margin-bottom: 10px;
+
+
+}
+
+/* Footer styling */
+.footer {
+    padding: 30px 10%;
+    background-color: rgb(23, 28, 54);
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-link {
+    font-size: 24px;
+    color: aliceblue;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: rgb(53, 192, 178);
+}
+
+.footer p {
+    font-size: 14px;
+}
